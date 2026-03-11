@@ -1,0 +1,26 @@
+[
+  {
+    "file": "main.c",
+    "arguments": [
+      "gcc",
+      "-DHAVE_CONFIG_H",
+      "-I.",
+      "-I..",
+      "-I../include",
+      "-g",
+      "-O2",
+      "-MT",
+      "main.o",
+      "-MD",
+      "-MP",
+      "-MF",
+      ".deps/main.Tpo",
+      "-c",
+      "-o",
+      "main.o",
+      "main.c"
+    ],
+    "directory": "/home/ryan/src/work/cs/271/src/blas/test",
+    "output": "main.o"
+  }
+]
