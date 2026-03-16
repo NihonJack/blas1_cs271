@@ -3,8 +3,6 @@ name: Build and Test BLAS
 on:
   push:
     branches: [ "main" ]
-  pull_request:
-    branches: [ "main" ]
   workflow_dispatch:
 
 jobs:
@@ -12,11 +10,9 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Check out repo
-        uses: actions/checkout@v4
+      - uses: actions/checkout@v4
 
-      - name: Make scripts executable
-        run: chmod +x configure test/testbench
+      - run: chmod +x configure
 
       - name: Configure
         run: ./configure
